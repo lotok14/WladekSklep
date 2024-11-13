@@ -1,4 +1,0 @@
-SELECT nazwa, opis, cena FROM podzespoly WHERE opis LIKE "%procesor%";
-SELECT id, nazwa FROM podzespoly WHERE cena<400 AND dostepnosc="1";
-SELECT nazwa FROM podzespoly LEFT JOIN typy ON podzespoly.typy_id=typy.id WHERE typy.kategoria="procesor";
-ALTER TABLE typy ADD opis text;
