@@ -1,0 +1,62 @@
+*{
+    font-family: garamond;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blok1l{
+    width: 72%;
+    background-color: #795548;
+    font-size: 170%;
+    float: left;
+}
+.blok2l{
+    width: 72%;
+    height: 400px;
+    float: left;
+}
+.blok3l{
+    width: 72%;
+    float: left;
+}
+.blok1p{
+    background-color: #BCAAA4;
+    color: #795548;
+    height: 400px;
+    width: 28%;
+    display: flex;
+}
+.blok2p{
+    background-color: #BCAAA4;
+    color: #795548;
+    height: 400px;
+    width: 28%;
+    display: flex;
+}
+.stopka{
+    background-color: #795548;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+table{
+    margin: auto;
+    width: 80%;
+    border-style: solid;
+    border-width: 1px;
+    color: #795548;
+}
+h4{
+    font-size: 200%;
+}
+img{
+    padding: 20px;
+    border-radius: 40px;
+}
+:link{
+    color: white;
+}
+label{
+    margin: 7px;
+}

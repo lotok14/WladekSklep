@@ -1,0 +1,3 @@
+SELECT imie, nazwisko, stanowisko FROM kadra WHERE stanowisko="fryzjer" OR stanowisko="stylista";
+SELECT COUNT(id), MAX(cena) FROM uslugi;
+ALTER TABLE uslugi ADD opinia text;

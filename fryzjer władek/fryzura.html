@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fryzjerstwo</title>
+    <link rel="stylesheet" href="styl8.css">
+</head>
+<body>
+    <div class="blok1l">
+        <a href="index.html">
+        <h1>SALON FRYZJERSKI</h1>
+        </a>
+    </div>
+    <div class="blok2l">
+        <h2>PROMOCJA!</h2>
+        <p>
+            <label>
+              <input id="id1" type="radio" name="Fryzura"> Krótkie
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="id2" type="radio" name="Fryzura"> Średnie
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="id3" type="radio" name="Fryzura"> Półdługie
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="id4" type="radio" name="Fryzura"> Długie
+            </label>
+          </p>
+          <button onclick="funkcja()">Odkryj promocję</button>
+          <p id="wynik"></p>
+    </div>
+    <div class="blok3l">
+        <p>Witaj! Miło nam, że odwiedziłeś nasz salon. Sprawdź promocje!</p>
+        <h4>Kontakt: 444 555 666</h4>
+    </div>
+    <div class="blok1p">
+        <a href="fryzura.html">
+        <h4>Ceny strzyżenia</h4>
+        </a>
+        <table>
+            <tr>
+                <th>Długość włosów</th>
+                <th>Cena</th>
+            </tr>
+            <tr>
+                <td>Krótkie</td>
+                <td id="krotkie" name="Cena">25</td>
+            </tr>
+            <tr>
+                <td>Średnie</td>
+                <td name="Cena">30</td>
+            </tr>
+            <tr>
+                <td>Półdługie</td>
+                <td name="Cena">40</td>
+            </tr>
+            <tr>
+                <td>Długie</td>
+                <td name="Cena">50</td>
+            </tr>
+        </table>
+    </div>
+    <div class="blok2p">
+        <img src="obraz1.jpg" alt="Fryzjerka">
+    </div>
+    <div class="stopka">
+        <p>Autor: 05261012339</p>
+    </div>
+    <script>
+        function funkcja(){
+            //document.getElementById("wynik").innerHTML = "cena promocyjna:";
+            //document.querySelector('input[name="Fryzura"]:checked').value;
+            var radios = document.getElementsByName('Fryzura');
+            var tabela = document.getElementsByName('Cena');
+            for (var i = 0, length = radios.length && tabela.length; i < length; i++) {
+                if (radios[i].checked) {
+                    // do whatever you want with the checked radio
+                    document.getElementById("wynik").innerHTML = "cena promocyjna: "+tabela[i].value;
+                    console.log(document.getElementById("krotkie").innerText);
+
+                    // only one radio can be logically checked, don't check the rest
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
